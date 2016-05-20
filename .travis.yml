@@ -6,11 +6,10 @@ php:
 
 install:
  - composer install
- - pear install pear/PHP_CodeSniffer
- - phpenv rehash
+
 script:
 - vendor/bin/phpcs --standard=PSR2 app
 - vendor/bin/phpcs --standard=PSR2 tests
-
+- phpunit tests/TestMathLibrary.php
 
 
