@@ -1,0 +1,17 @@
+{
+  "name": "thunderbird/testingCI",
+  "authors": [
+    {
+      "name": "Thunderbird",
+      "email": "no-reply@nothing.not"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": "./app"
+    }
+  }
+}
