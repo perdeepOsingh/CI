@@ -7,7 +7,8 @@ install:
  - pear install pear/PHP_CodeSniffer
  - phpenv rehash
 script:
-- composer dump
+- vendor/bin/phpcs --standard=PSR2 app
+- vendor/bin/phpcs --standard=PSR2 tests
 - phpunit tests/TestMathLibrary.php
 
 
