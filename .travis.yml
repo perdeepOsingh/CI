@@ -1,6 +1,8 @@
 language: php
 php:
  - '7.0'
+ - '5.6'
+ - '5.5'
 
 install:
  - composer install
@@ -9,6 +11,6 @@ install:
 script:
 - vendor/bin/phpcs --standard=PSR2 app
 - vendor/bin/phpcs --standard=PSR2 tests
-- phpunit tests/TestMathLibrary.php
+
 
 
