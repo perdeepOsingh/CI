@@ -1,7 +1,8 @@
 <?php
-
+    namespace tests;
 
     use app\MathLibrary;
+    use PHPUnit_Framework_TestCase;
 
     class TestMathLibrary extends PHPUnit_Framework_TestCase
     {
