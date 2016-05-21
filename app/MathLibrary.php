@@ -1,12 +1,18 @@
 <?php
     namespace app;
 
-class MathLibrary
-{
-    public static function addition(array $numbers)
+    class MathLibrary
     {
-        $result = array_sum($numbers);
+        public static function addition(array $numbers)
+        {
+            $result = array_sum($numbers);
 
-        return $result;
+            return $result;
+        }
+
+        public static function subtraction($number1, $number2)
+        {
+            $result = $number1-$number2;
+            return $result;
+        }
     }
-}
