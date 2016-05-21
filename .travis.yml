@@ -10,5 +10,5 @@ install:
 script:
 - vendor/bin/phpcs --standard=PSR2 app
 - vendor/bin/phpcs --standard=PSR2 tests
-- vendor/bin/phpunit tests/TestMathLibrary.php
 - vendor/bin/phpmd  app text codesize,unusedcode,naming,cleancode,design,controversial
+- vendor/bin/phpunit --code-coverage=clover.xml tests/TestMathLibrary.php
