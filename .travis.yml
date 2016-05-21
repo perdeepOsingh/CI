@@ -4,6 +4,16 @@ php:
  - '5.6'
  - '5.5'
 
+before_install:
+- composer require phpunit/phpunit:4.8.* satooshi/php-coveralls:dev-master
+- composer install --dev
+
+script:
+- ./vendor/bin/phpunit --coverage-clover clover.xml
+
+after_script:
+- php vendor/bin/coveralls -v
+
 install:
  - composer install
 
